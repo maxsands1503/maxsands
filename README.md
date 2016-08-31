@@ -46,4 +46,79 @@ cd ../components && touch directive.js service.js
 ![terminal](terminal-ss.jpg "So much done, so far to go!")
 
 #COMMIT YOUR STUFF!
-Seriously, get into the habit of committing your work often. If you are eventually deploying to Firebase or Heroku, do that now too. 
+Seriously, get into the habit of committing your work often. If you are eventually deploying to Firebase or Heroku, do that now too.
+
+## Step 3
+Open the whole project in your text editor of choice, I use Atom. In terminal I type:  
+```
+atom .  
+
+```
+in my root directory, BAM, it is open. Open your index.html file. We had originally said that this was going to be a pretty landing page with an image slider, so we are going to need to add a few things.  
+1) An image directory  
+2) Images  
+3) A 'scripts.js' file inside of our 'js' directory.   
+```
+mkdir images && cd js && touch scripts.js
+```
+Cool, now that is completed lets open up our 'index.html' file. We need to start the set up of all of our scripts. I am going to give you a nice list of what you will need, I will leave it up to you to find a CDN for each.   
+- Bootstrap  
+- master.css
+- AngularJS  
+- Angular-ui-router  
+- jQuery  
+- app.js  
+- scripts.js
+- Your controllers
+- Your directives
+- Your service  
+
+Now, as I am looking through this ridiculously long list, I start to think, isn't something missing? Yes, we need a home controller and template. So we are going to add that.  
+
+```
+cd controllers && touch home.js && cd ../templates && touch home.html
+```
+Ok so now that we have fixed that, oversight, and we have all the links and script tags we need, we are going to add some link tags we want, AKA some fonts. I use google fonts, specifically Roboto and Roboto Slab, I am making this site match my portfolio, so you don't have to do that. Grab the links and add them to the head of your 'index'. Then in 'master.css' we will add our font-family declarations.
+
+There are two really important things we have to add to our 'index.html'. Just above the closing head tag, we need to add `<base href="/">`, this set our base url for ui-router. At the bottom of the body, we need to add `<div ui-view></div>` this is where our templates will render.   
+
+End product of index.html:  
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/master.css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+  </head>
+  <body>
+
+     <div ui-view></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+   <script type="text/javascript" src="/js/app.js"></script>
+   <script src="controllers/gallery.js" charset="utf-8"></script>
+   <script src="controllers/home.js" charset="utf-8"></script>
+   <script src="controllers/about.js" charset="utf-8"></script>
+   <script src="controllers/resume.js" charset="utf-8"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script type="text/javascript" src="/js/script.js"></script>
+  </body>
+</html>
+```   
+End product of 'master.css':  
+```
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Slab', serif;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+```
+#COMMIT!!!!!
+And you know deploy, or whatever.
