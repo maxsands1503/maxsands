@@ -43,7 +43,7 @@ The components directory will have two files, 'directive.js' and 'service.js', w
 ```
 cd ../components && touch directive.js service.js
 ```
-![terminal](terminal-ss.jpg "So much done, so far to go!")
+![terminal](images/terminal-ss.jpg "So much done, so far to go!")
 
 #COMMIT YOUR STUFF!
 Seriously, get into the habit of committing your work often. If you are eventually deploying to Firebase or Heroku, do that now too.
