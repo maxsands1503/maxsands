@@ -122,3 +122,8 @@ p{
 ```
 #COMMIT!!!!!
 And you know deploy, or whatever.
+
+## Step 4
+Let's build a navbar!
+
+In index.html we are going to add our nav bar. We are going to start out pretty simple here.

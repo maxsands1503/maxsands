@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/master.css" media="screen" charset="utf-8">
@@ -11,6 +12,20 @@
     <base href="/">
   </head>
   <body>
+    <ul class="topnav" id="myTopnav">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Gallery</a></li>
+      <li><a href="#about">Resume</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+      </li>
+      <li id="navImg"><img src="images/computer.png"></li>
+    </ul>
+    <asid>
+      <h3>Contact Information</h3>
+    </asid>
+
 
      <div ui-view></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
@@ -20,7 +35,16 @@
    <script src="controllers/home.js" charset="utf-8"></script>
    <script src="controllers/about.js" charset="utf-8"></script>
    <script src="controllers/resume.js" charset="utf-8"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-   <script type="text/javascript" src="/js/script.js"></script>
+   <script type="text/javascript" src="/js/scripts.js"></script>
+   <script type="text/javascript">
+       function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+           x.className += " responsive";
+       } else {
+           x.className = "topnav";
+       }
+    }
+   </script>
   </body>
 </html>
