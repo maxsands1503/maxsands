@@ -22,15 +22,43 @@
       </li>
       <li id="navImg"><img src="images/computer.png"></li>
     </ul>
-    <asid>
-      <h3>Contact Information</h3>
-    </asid>
+      <aside class="col-lg-3 col-md-4 col-xs-12">
+        <div id="pretty">
+          <img src="images/myprettyface.png"/>
+        </div>
+        <h3>Contact Information</h3>
+        <div class="contactInfo" id="phone">
+          <span><img src="images/technology.png" /><a href="tel:7203340540">  720-334-0540</a></span><br />
+        </div>
+        <div class="contactInfo" id="address">
+          <span><img src="images/gps.png"/><a href="https://www.google.com/maps/place/7063+S+Flower+Ct,+Littleton,+CO+80128/@39.587837,-105.1028136,17z/data=!3m1!4b1!4m5!3m4!1s0x876b7ee9914303d1:0xb302a7144e842f54!8m2!3d39.587837!4d-105.1006249">7063 S. Flower Ct., Littleton, CO 80128</a></span><br />
+        </div>
+        <div class="contactInfo" id="email">
+          <span><img src="images/multimedia.png" /><a href="mailto:maxsands1503@icloud.com">maxsands1503@icloud.com</a></span>
+        </div>
+        <div class="contactInfo" id="linkedin">
+          <span><img src="images/social.png" /><a href="https://www.linkedin.com/in/maxsands1503">/in/maxsands1503</a></span>
+        </div>
+        <div class="contactInfo" id="github">
+          <span><img src="images/circle.png" /><a href="https://github.com/maxsands1503">/maxsands1503</a></span>
+        </div>
+        <div class="contactInfo" id="download">
+          <span><img src="images/arrows.png" height="24px"/><a href="/images/Maxwell-Sands-Resume.pdf" download>Download My Resume</a></span>
+        </div>
+      </aside>
 
 
-     <div ui-view></div>
+
+     <div ui-view class="col-md-8 col-xs-12" id="showSection"></div>
+     <footer class="col-md-12 col-xs-12">
+       <a href="https://github.com/maxsands1503"><img src="images/circle.png" /></a>
+       <a href="https://www.linkedin.com/in/maxsands1503"><img src="images/social.png" /></a>
+       <a href="mailto:maxsands1503@icloud.com"><img src="images/multimedia.png" /></a>
+     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
    <script type="text/javascript" src="/js/app.js"></script>
+   <script src="components/services.js" charset="utf-8"></script>
    <script src="controllers/gallery.js" charset="utf-8"></script>
    <script src="controllers/home.js" charset="utf-8"></script>
    <script src="controllers/about.js" charset="utf-8"></script>

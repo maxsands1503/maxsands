@@ -69,9 +69,67 @@ ul.topnav li.icon {
 }
 aside{
   float: left;
+  text-align: left;
+  height: 85vh;
+  background-color: #45818E;
+}
+#pretty{
+  background-color: white;
+  width: 63%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#pretty img{
+  border: 15px solid #b3b3b3;
+  padding: 10px;
+}
+aside h3{
+  text-align: center;
+  color: black;
+}
+aside a{
+  text-decoration: none;
+  color: black;
+}
+.contactInfo{
+  margin: 3%;
+}
+.contactInfo a{
+  margin-left: 2%;
+}
+.contactInfo p{
+  display: inline-flex;
+  margin-left: 2%;
 }
 @media screen and (max-width:680px) {
   aside{
+    float: none;
+    text-align: center;
+    height: 20vh;
+    background-color:
+  }
+  #address, #github, #linkedin, #download, #pretty{
     display: none;
   }
+}
+@media screen and (max-width:995px){
+  #showSection{
+    text-align: center;
+    height: 65vh;
+  }
+}
+#showSection{
+  height: 75vh;
+}
+footer{
+  position: absolute !important;
+  background-color: #D9D9D9;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 10vh;
+}
+footer a img{
+  margin: 2% 1% 1% 1%;
 }
