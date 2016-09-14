@@ -1,3 +1,3 @@
-app.controller('GalleryController', function($scope, PortfolioFactory){
-  
+app.controller('GalleryController', function($scope){
+
 })

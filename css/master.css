@@ -83,13 +83,18 @@ aside{
   border: 15px solid #b3b3b3;
   padding: 10px;
 }
+@media screen and (max-height: 1000px){
+  aside{
+    overflow-y: scroll;
+  }
+}
 @media screen and (max-width:1277px){
   #pretty{
     display: none;
   }
-  aside{
-    overflow-x: scroll;
-    height: 85vh;
+  aside div{
+    overflow-y: scroll;
+    height: 100%;
   }
   footer{
     display: none;
