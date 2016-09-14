@@ -1,3 +1,6 @@
+#gall{
+  height: 100%
+}
 .contents .picks{
   width: 8vw;
   max-height: 15vh;
@@ -7,4 +10,9 @@
 }
 .contents div{
   margin-left: 5vw;
+}
+@media screen and (max-width:1277px){
+  .picks{
+    display: none;
+  }
 }

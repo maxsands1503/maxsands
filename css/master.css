@@ -87,6 +87,16 @@ aside{
   #pretty{
     display: none;
   }
+  aside{
+    overflow-x: scroll;
+    height: 85vh;
+  }
+  footer{
+    display: none;
+  }
+  #showSection{
+    height: 100%;
+  }
 }
 aside h3{
   text-align: center;
