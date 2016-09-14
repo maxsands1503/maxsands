@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="portfolio">
   <head>
     <meta charset="utf-8">
     <title>Welcome</title>
@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/master.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/about.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
   </head>
   <body>
     <ul class="topnav" id="myTopnav">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">About</a></li>
-      <li><a href="#contact">Gallery</a></li>
-      <li><a href="#about">Resume</a></li>
+      <li><a class="active" ui-sref="about">About</a></li>
+      <li><a ui-sref="gallery">Gallery</a></li>
+      <li><a ui-sref="resume">Resume</a></li>
       <li class="icon">
         <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
       </li>
@@ -49,7 +50,7 @@
 
 
 
-     <div ui-view class="col-md-8 col-xs-12" id="showSection"></div>
+     <div ui-view class="view col-lg-9 col-md-8 col-sm-12 col-xs-12" id="showSection"></div>
      <footer class="col-md-12 col-xs-12">
        <a href="https://github.com/maxsands1503"><img src="images/circle.png" /></a>
        <a href="https://www.linkedin.com/in/maxsands1503"><img src="images/social.png" /></a>
@@ -57,10 +58,11 @@
      </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-   <script type="text/javascript" src="/js/app.js"></script>
-   <script src="components/services.js" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+   <script src="components/service.js" charset="utf-8"></script>
+   <script src="components/portfolio-service.js" charset="utf-8"></script>
    <script src="controllers/gallery.js" charset="utf-8"></script>
-   <script src="controllers/home.js" charset="utf-8"></script>
    <script src="controllers/about.js" charset="utf-8"></script>
    <script src="controllers/resume.js" charset="utf-8"></script>
    <script type="text/javascript" src="/js/scripts.js"></script>

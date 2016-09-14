@@ -1,0 +1,19 @@
+{
+  "name": "maxsands",
+  "version": "1.0.0",
+  "description": "The objective of this walkthrough is to teach how to create a simple portfolio website using AngularJS, jQuery, HTML, CSS, Bootstrap and FTPing to a hosted domain. The end product will be a single page app that displays different bits of information depending on the page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsands1503/maxsands.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxsands1503/maxsands/issues"
+  },
+  "homepage": "https://github.com/maxsands1503/maxsands#readme"
+}
