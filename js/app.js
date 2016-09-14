@@ -13,9 +13,4 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     templateUrl: "../templates/gallery.html",
     controller: "GalleryController"
   })
-  .state("resume", {
-    url:"/resume",
-    templateUrl: "../templates/resume.html",
-    controller: "ResumeController"
-  })
 })

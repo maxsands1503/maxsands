@@ -1,0 +1,10 @@
+.contents .picks{
+  width: 8vw;
+  max-height: 15vh;
+}
+.contents {
+  display: inline-flex;
+}
+.contents div{
+  margin-left: 5vw;
+}

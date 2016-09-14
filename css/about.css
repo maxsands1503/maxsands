@@ -27,3 +27,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+.extras .well{
+  margin-top: 1vh;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+.extras .well:hover{
+  background-color: #45818E;
+  border: 1px solid #45818E;
+}
