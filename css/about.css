@@ -1,14 +1,10 @@
 
-@media screen and (max-width:680px) {
-  #about{
-    width: 100vw;
-  }
-  #about div{
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+*{
+  margin: 0;
+  padding: 0;
+}
+#about{
+  font-family: 'Roboto', sans-serif;
 }
 #about div{
   width: 90%;
@@ -23,12 +19,12 @@
   width: 100%;
 }
 .extras div{
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-.extras .well{
-  margin-top: 1vh;
+
+.extras .well, .extras .info{
+  margin-top: 5vh;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
@@ -36,4 +32,35 @@
 .extras .well:hover{
   background-color: #45818E;
   border: 1px solid #45818E;
+}
+.info{
+  width: 100%;
+  background-color: #D9D9D9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+.info {
+  padding: 2%;
+}
+@media screen and (max-width:680px) {
+  #about{
+    width: 100vw;
+  }
+  #about div{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+@media screen and (max-width: 570px){
+  #about{
+    width: 100vw;
+  }
+  #about div{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

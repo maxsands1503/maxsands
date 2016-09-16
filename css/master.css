@@ -10,7 +10,7 @@ body{
 *{
   padding: 0;
   margin: 0;
-  max-height: 100vh;
+  /*max-height: 100vh;*/
 
 }
 ul.topnav {
@@ -19,6 +19,7 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color:#D9D9D9;
+  border-bottom: 1px solid black;
 }
 
 ul.topnav li a {
@@ -43,7 +44,11 @@ ul.topnav li a:hover {
 ul.topnav li.icon {
   display: none;
 }
-
+@media screen and (max-height:680px) {
+  #pretty{
+    display: none;
+  }
+}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
@@ -52,24 +57,6 @@ ul.topnav li.icon {
   }
   #navImg{
     display: none;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: flex;
-  }
-  ul.topnav.responsive li a {
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
   }
 }
 aside{
@@ -82,6 +69,9 @@ aside{
   background-color: white;
   max-width: 290px;
   margin-top: 5%;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 #pretty img{
   border: 15px solid #b3b3b3;
@@ -125,6 +115,11 @@ aside a{
   display: inline-flex;
   margin-left: 2%;
 }
+@media screen and (max-width: 1230px){
+  #pretty{
+    display: none;
+  }
+}
 @media screen and (max-width:1030px){
   #pretty{
     display: none;
@@ -162,9 +157,9 @@ aside a{
   }
 }
 @media screen and (max-width:680px) {
-  *{
+  /**{
     max-height: inherit;
-  }
+  }*/
   aside{
     float: none;
     text-align: center;
@@ -187,6 +182,23 @@ aside a{
     height: inherit;
   }
 }
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: flex;
+  }
+  ul.topnav.responsive li a {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  }
+}
 #showSection{
   height: 85vh;
   padding-left: 0 !important;
@@ -200,6 +212,7 @@ footer{
   left: 0;
   text-align: center;
   height: 8vh;
+  border-top: 1px solid black;
 }
 footer a img{
   margin: 2% 1% 1% 1%;

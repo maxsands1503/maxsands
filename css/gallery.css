@@ -1,6 +1,15 @@
 #gall{
   height: 100%
 }
+.panel{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
 .contents .picks{
   width: 8vw;
   max-height: 15vh;
@@ -11,7 +20,7 @@
 .contents div{
   margin-left: 5vw;
 }
-@media screen and (max-width:1277px){
+@media screen and (max-width:1250px){
   .picks{
     display: none;
   }
